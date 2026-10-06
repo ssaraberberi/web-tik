@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Albania</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header">
+        <div class="container nav-bar">
+            <a href="#home" class="logo">Explore Albania</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Albania</h1>
+            <p>
+                From sunny beaches and high mountains to old castles and lively cities,
+                Albania has something for every traveller.
+            </p>
+            <button id="explore-btn" class="btn">Explore Destinations</button>
+        </div>
+    </section>
+
+    <!-- ===== DESTINATIONS SECTION ===== -->
+    <section id="destinations" class="section">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <p class="section-text">Here are some of the most beautiful places to visit in Albania.</p>
+
+            <div class="cards">
+
+                <!-- Card 1: Tirana -->
+                <div class="card">
+                    <div class="card-image">
+                        <span class="image-fallback">Tirana</span>
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Skanderbeg_Square_Tirana_2016.jpg?width=600" alt="Skanderbeg Square in Tirana">
+                    </div>
+                    <div class="card-body">
+                        <h3>Tirana</h3>
+                        <p>The colourful capital city, full of cafes, museums, parks and a friendly atmosphere.</p>
+                        <button class="btn btn-small learn-more" data-place="Tirana">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Berat -->
+                <div class="card">
+                    <div class="card-image">
+                        <span class="image-fallback">Berat</span>
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Berat_-_panoramio.jpg?width=600" alt="Old houses of Berat">
+                    </div>
+                    <div class="card-body">
+                        <h3>Berat</h3>
+                        <p>Known as the "City of a Thousand Windows", with old Ottoman houses and a castle on the hill.</p>
+                        <button class="btn btn-small learn-more" data-place="Berat">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Theth -->
+                <div class="card">
+                    <div class="card-image">
+                        <span class="image-fallback">Theth</span>
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Theth_church.jpg?width=600" alt="Mountains around Theth">
+                    </div>
+                    <div class="card-body">
+                        <h3>Theth</h3>
+                        <p>A small village in the Albanian Alps, perfect for hiking, waterfalls and fresh mountain air.</p>
+                        <button class="btn btn-small learn-more" data-place="Theth">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Ksamil -->
+                <div class="card">
+                    <div class="card-image">
+                        <span class="image-fallback">Ksamil</span>
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ksamil_Islands.jpg?width=600" alt="Beach and islands in Ksamil">
+                    </div>
+                    <div class="card-body">
+                        <h3>Ksamil</h3>
+                        <p>A seaside village in the south with white sand, clear blue water and small islands.</p>
+                        <button class="btn btn-small learn-more" data-place="Ksamil">Learn More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section section-light">
+        <div class="container about">
+            <h2 class="section-title">About Albania</h2>
+            <p>
+                Albania is a small country in the Balkans, but it has a lot to offer. In one trip
+                you can relax on beaches by the Adriatic and Ionian Sea, hike in the Albanian Alps,
+                and visit historic towns that are protected by UNESCO. Albanian people are known
+                for their hospitality, the food is fresh and tasty, and travelling is still quite
+                affordable compared to other European countries. This makes Albania a great choice
+                for students and anyone who wants to discover something new.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-text">Have a question about travelling to Albania? Send us a message!</p>
+
+            <form id="contact-form" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
+                <!-- This text is shown by JavaScript after the form is submitted -->
+                <p id="form-message" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2026 Explore Albania. Student Web Project.</p>
+    </footer>
+
+    <!-- Link to the JavaScript file (at the end so the HTML loads first) -->
+    <script src="script.js"></script>
+</body>
+</html>
